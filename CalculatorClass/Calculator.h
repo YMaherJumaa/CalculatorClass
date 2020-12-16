@@ -2,20 +2,18 @@
 class Calculator
 {
 private:
-	int number1, number2;
+	int number1, number2; //master branch
 public:
 	Calculator();
-	void setNumber1(int x)
+	//master branch
+	void setNumber1(int x){number1 = x;}
+	void setNumber2(int y){number2 = y;}
+	int addition(){return (number1 + number2);}
+	//subtraction branch
+	int subtraction()
 	{
-		number1 = x;
-	}
-	void setNumber2(int y)
-	{
-		number2 = y;
-	}
-	int addition()
-	{
-		return (number1 + number2);
+		if (number1 > number2) return (number1 - number2);
+		else return (number2 - number1);
 	}
 	~Calculator();
 };
