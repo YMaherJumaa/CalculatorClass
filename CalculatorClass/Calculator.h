@@ -17,6 +17,13 @@ public:
 	{
 		return (number1 + number2);
 	}
+	
+	//multiplication
+	int multiplication()
+	{
+		return (number1 * number2);
+	}
+
 	~Calculator();
 };
 
